@@ -1,0 +1,26 @@
+.hero {
+    min-height: 100vh;
+    padding: 80px;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero-title {
+    font-size: 4rem;
+}
+
+.hero-subtitle {
+    font-size: 2rem;
+}
+
+.hero-text {
+    max-width: 500px;
+    line-height: 1.6;
+}
+
+.hero-buttons button {
+    margin-right: 10px;
+    padding: 12px 20px;
+}
