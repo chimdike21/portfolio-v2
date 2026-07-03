@@ -1,0 +1,22 @@
+.services{
+    min-height:100vh;
+    padding:80px;
+}
+
+.services h2{
+    margin-bottom:30px;
+}
+
+.services-container{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.service-card{
+    width:300px;
+    padding:25px;
+    border-radius:20px;
+    border:1px solid rgba(255,255,255,0.1);
+    backdrop-filter:blur(12px);
+}
