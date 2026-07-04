@@ -7,18 +7,69 @@ import Services from './components/services/services'
 import Contact from './components/contact/contact'
 import Footer from './components/footer/footer'
 
+import { useEffect } from 'react'
+import './index.css'
+
 function App() {
   
+  useEffect(() => {
+    const sections = document.querySelectorAll('.reveal')
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if(entry.isIntersecting){
+            entry.target.classList.add('active')
+          }
+          else{
+            entry.target.classList.remove('active')
+          }
+
+
+        })
+      },
+      {
+        threshold:0.15
+      }
+    )
+
+    sections.forEach((section)=>{
+      observer.observe(section)
+    })
+
+    return ()=> observer.disconnect()
+
+  },[])
+
 
   return (
     <>
       <Navbar />
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Services />
-      <Contact />
+      
+      <div className="reveal">
+        <Hero />
+      </div>
+
+      <div className="reveal">
+        <About />
+      </div>
+
+      <div className="reveal">
+        <Skills />
+      </div>
+
+      <div className="reveal">
+        <Projects />
+      </div>
+
+      <div className="reveal">
+        <Services />
+      </div>
+
+      <div className="reveal">
+        <Contact />
+      </div>
+
       <Footer />
     </>
   )

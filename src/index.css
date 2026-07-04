@@ -22,3 +22,20 @@ button{
 section{
   padding:100px 80px;
 }
+
+.reveal{
+  opacity:0;
+  transform:translateY(120px) scale(0.92);
+  filter:blur(10px);
+
+  transition:
+    opacity 1.2s ease,
+    transform 1.2s cubic-bezier(0.22,1,0.36,1),
+    filter 1.2s ease;
+}
+
+.reveal.active{
+  opacity:1;
+  transform:translateY(0) scale(1);
+  filter:blur(0px);
+}

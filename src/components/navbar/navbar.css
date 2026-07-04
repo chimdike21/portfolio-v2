@@ -51,3 +51,28 @@
 .nav-links a:hover{
     transform:scale(1.50);
 }
+
+
+@media (max-width:768px){
+
+    .navbar{
+        padding:16px 20px;
+        width:95%;
+    }
+
+    .logo{
+        font-size:1.1rem;
+    }
+
+    .nav-links{
+        gap:15px;
+    }
+
+    .nav-links a{
+        font-size:0.9rem;
+    }
+
+    .nav-links a:hover{
+        transform:scale(1.15);
+    }
+}
