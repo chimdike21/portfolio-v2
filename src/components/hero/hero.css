@@ -78,3 +78,55 @@
 .hero-buttons button:hover {
     transform:translateY(-5px);
 }
+
+
+.cursor-glow{
+    position:absolute;
+
+    width:420px;
+    height:420px;
+
+    background:radial-gradient(
+        circle,
+        rgba(255,215,0,0.22),
+        transparent 60%
+    );
+
+    border-radius:50%;
+
+    pointer-events:none;
+
+    transform:translate(-50%, -50%);
+
+    filter:blur(20px);
+
+    transition:
+    left 0.2s ease-out,
+    top 0.2s ease-out;
+
+    animation:floatGlow 2.5s ease-in-out infinite;
+}
+
+@keyframes floatGlow{
+    0%{
+        transform:translate(-50%, -50%) translateY(0px) translateX(0px) scale(1);
+    }
+
+    25%{
+        transform:translate(-50%, -50%) translateY(-30px) translateX(25px) scale(1.08);
+    }
+
+
+    50%{
+        transform:translate(-50%, -50%) translateY(-50px) translateX(-20px) scale(0.95);
+    }
+
+    75%{
+        transform:translate(-50%, -50%) translateY(-15px) translateX(30px) scale(1.05);
+    }
+
+
+    100%{
+        transform:translate(-50%, -50%) translateY(0px) translateX(0px) scale(1);
+    }
+}

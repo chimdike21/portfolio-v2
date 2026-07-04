@@ -1,30 +1,134 @@
-.projects {
-    min-height: 100vh;
-    padding: 80px;
+.projects-container{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit, minmax(320px,1fr));
+
+    gap:30px;
+
+    margin-top:50px;
 }
 
-.projects h2 {
-    margin-bottom: 30px;
+.project-image{
+    width:100%;
+    height:180px;
+    margin-bottom:20px;
+    border-radius:16px;
+    overflow:hidden;
 }
 
-.projects-container {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
+.project-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
 }
 
-.project-card {
-    width: 300px;
-    padding: 25px;
-    border-radius: 20px;
-    border: 1px solid rgba(255,255,255,0.1);
-    backdrop-filter: blur(12px);
+
+.project-placeholder{
+    width:100%;
+    height:100%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:1.2rem;
+    font-weight:600;
+
+    color:rgba(255,255,255,0.7);
 }
 
-.project-card h3 {
-    margin-bottom: 10px;
+.project-card{
+    background:rgba(255,255,255,0.05);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,0.1);
+
+    border-radius:25px;
+
+    padding:30px;
+    
+    overflow:hidden;
+
+    transition:0.4s;
 }
 
-.project-card p {
-    margin-bottom: 15px;
+.project-card:hover{
+    transform:
+    translateY(-10px)
+    scale(1.02);
+}
+
+.project-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:20px;
+}
+
+.status.completed{
+    padding:8px 14px;
+
+    border-radius:30px;
+
+    font-size:.8rem;
+
+    color:#6DFF8B;
+    background:rgba(109,255,139,0.15);
+    border:1px solid rgba(109,255,139,0.3);
+}
+
+.status.in-progress{
+    border-radius: 30px;
+    font-size:.8rem;
+    padding:8px 14px;
+    color:#FFD76D;
+    background:rgba(255,215,109,0.15);
+    border:1px solid rgba(255,215,109,0.3);
+}
+
+
+.project-card p{
+    margin-bottom:20px;
+
+    line-height:1.7;
+
+    color:#B8B8B8;
+}
+
+.tech{
+    font-size:.9rem;
+    opacity:.7;
+}
+
+
+.project-image{
+    width:100%;
+    height:180px;
+
+    margin-bottom:20px;
+
+    border-radius:16px;
+
+    background:linear-gradient(
+        135deg,
+        rgba(255,255,255,0.08),
+        rgba(255,215,0,0.08)
+    );
+}
+
+.project-link{
+    display:inline-block;
+    margin-top:20px;
+
+    color:white;
+    text-decoration:none;
+
+    transition:transform 0.3s ease;
+}
+
+.project-link:hover{
+    transform:translateX(8px);
 }
