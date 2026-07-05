@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react'
 import './hero.css'
+import { FiArrowRight, FiMail } from 'react-icons/fi'
 
 function Hero() {
     const [mousePosition, setMousePosition] = useState({
@@ -53,13 +54,18 @@ style={{
           </h2>
   
           <p className="hero-text">
-            I build modern websites and applications with clean design,
-            smooth interactions, and great user experiences.
+          I build modern websites and applications with clean design,
+          smooth interactions, and memorable user experiences.
           </p>
   
           <div className="hero-buttons">
-            <button>View Projects</button>
-            <button>Contact Me</button>
+          <button>
+                View Projects <FiArrowRight />
+            </button>
+
+            <button>
+                Contact Me <FiMail />
+            </button>
           </div>
         </div>
       </section>

@@ -44,12 +44,11 @@
     display:inline-block;
 
     transition:
-        transform 0.35s ease,
-        font-size 0.35s ease;
+    transform 0.45s cubic-bezier(0.22,1,0.36,1);
 }
 
 .nav-links a:hover{
-    transform:scale(1.50);
+    transform:scale(1.12);
 }
 
 
@@ -65,7 +64,8 @@
     }
 
     .nav-links{
-        gap:15px;
+        gap:12px;
+        flex-wrap:wrap;
     }
 
     .nav-links a{
