@@ -7,21 +7,27 @@ function Projects() {
             description: "Track expenses, spending habits and manage personal finances.",
             tech: "React + TypeScript",
             status: "Completed",
-            image: "/expense.png"
+            image: "/expense.png",
+            github: "#",
+            live: "#"
         },
         {
             title: "Trading Journal",
             description: "Record trades and review performance analytics.",
             tech: "React",
             status: "In Progress",
-            image: "/trading.png"
+            image: "/trading.png",
+            github: "#",
+            live: "#"
         },
         {
             title: "Physi-O-Mac Website",
             description: "Modern gym website built for Nigerian users.",
             tech: "React",
             status: "Completed",
-            image: "/gym.png"
+            image: "/gym.png",
+            github: "#",
+            live: "#"
         }
     ]
 
@@ -57,6 +63,25 @@ function Projects() {
                         <span className="tech">
                             {project.tech}
                         </span>
+                        <div className="project-actions">
+                            <a
+                                href={project.github}
+                                target="_blank"
+                                rel="noreferrer"
+                                className="project-btn"
+                            >
+                                GitHub
+                            </a>
+                            <a
+                                href={project.live}
+                                target="_blank"
+                                rel="noreferrer"
+                                className="project-btn"
+                            >
+                                Live Demo
+                            </a>
+                        </div>
+
 
                     </div>
 

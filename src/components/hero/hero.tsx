@@ -47,6 +47,10 @@ style={{
 
 />
         <div className="hero-content">
+        <div className="hero-badge">
+             <span className="status-dot"></span>
+             Open to Opportunities
+        </div>
           <h1 className="hero-title">Chimdi</h1>
   
           <h2 className="hero-subtitle">
@@ -59,14 +63,26 @@ style={{
           </p>
   
           <div className="hero-buttons">
-          <button>
-                View Projects <FiArrowRight />
-            </button>
+    <button
+        onClick={() =>
+            document
+                .getElementById("projects")
+                ?.scrollIntoView({ behavior: "smooth" })
+        }
+    >
+        View Projects <FiArrowRight />
+    </button>
 
-            <button>
-                Contact Me <FiMail />
-            </button>
-          </div>
+    <button
+        onClick={() =>
+            document
+                .getElementById("contact")
+                ?.scrollIntoView({ behavior: "smooth" })
+        }
+    >
+        Contact Me <FiMail />
+    </button>
+</div>
         </div>
       </section>
     )
