@@ -3,7 +3,7 @@ import Navbar from './components/navbar/navbar'
 import About from './components/about/about'
 import Skills from './components/skills/skills'
 import Projects from './components/projects/projects'
-import Services from './components/services/services'
+// import Services from './components/services/services'
 import Contact from './components/contact/contact'
 import Footer from './components/footer/footer'
 
@@ -62,9 +62,9 @@ function App() {
         <Projects />
       </div>
 
-      <div className="reveal">
+      {/* <div className="reveal">
         <Services />
-      </div>
+      </div> */}
 
       <div className="reveal">
         <Contact />

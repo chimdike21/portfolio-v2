@@ -23,7 +23,7 @@ function About() {
 
             <div className="about-text">
               <p>
-                I'm Chimdike, a frontend developer passionate about building modern,
+                I'm Chimdike Nwachukwu, a frontend developer passionate about building modern,
                 responsive web experiences that feel as good to use as they look.
               </p>
 

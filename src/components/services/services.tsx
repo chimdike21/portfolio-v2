@@ -1,50 +1,50 @@
-import './services.css'
+// import './services.css'
 
-function Services() {
+// function Services() {
 
-    const services = [
-        {
-            title: "Frontend Development",
-            description: "Building responsive websites and web apps."
-        },
-        {
-            title: "App Development",
-            description: "Creating mobile applications with Flutter."
-        },
-        {
-            title: "UI Implementation",
-            description: "Turning Figma designs into real products."
-        }
-    ]
+//     const services = [
+//         {
+//             title: "Frontend Development",
+//             description: "Building responsive websites and web apps."
+//         },
+//         {
+//             title: "App Development",
+//             description: "Creating mobile applications with Flutter."
+//         },
+//         {
+//             title: "UI Implementation",
+//             description: "Turning Figma designs into real products."
+//         }
+//     ]
 
-    return (
-        <section className="services">
+//     return (
+//         <section className="services">
 
-            <h2>Services</h2>
+//             <h2>Services</h2>
 
-            <div className="services-container">
+//             <div className="services-container">
 
-                {services.map((service) => (
+//                 {services.map((service) => (
 
-                    <div
-                      className="service-card"
-                      key={service.title}
-                    >
+//                     <div
+//                       className="service-card"
+//                       key={service.title}
+//                     >
 
-                        <h3>{service.title}</h3>
+//                         <h3>{service.title}</h3>
 
-                        <p>
-                            {service.description}
-                        </p>
+//                         <p>
+//                             {service.description}
+//                         </p>
 
-                    </div>
+//                     </div>
 
-                ))}
+//                 ))}
 
-            </div>
+//             </div>
 
-        </section>
-    )
-}
+//         </section>
+//     )
+// }
 
-export default Services
+// export default Services

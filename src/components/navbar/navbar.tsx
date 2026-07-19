@@ -53,7 +53,7 @@ function Navbar() {
         <nav className="navbar">
 
         <h2 className="logo">
-            Chimdi<span>.</span>
+            Chimdike<span>.</span>
         </h2>
         <ul
             className="nav-links"

@@ -31,6 +31,10 @@
     font-weight:700;
 }
 
+.logo span{
+    color:#FFD76D;
+}
+
 .nav-links{
     display:flex;
     gap:30px;
@@ -66,7 +70,7 @@
 }
 
 .nav-links a:hover{
-    transform:scale(1.12);
+    transform: translateY(-2px);
 }
 
 .nav-links a.active{
@@ -96,6 +100,6 @@
     }
 
     .nav-links a:hover{
-        transform:scale(1.15);
+        transform:translate(-2px);
     }
 }

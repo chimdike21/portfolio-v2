@@ -51,7 +51,7 @@ style={{
              <span className="status-dot"></span>
              Open to Opportunities
         </div>
-          <h1 className="hero-title">Chimdi</h1>
+          <h1 className="hero-title">Chimdike</h1>
   
           <h2 className="hero-subtitle">
             Frontend Developer & App Builder
