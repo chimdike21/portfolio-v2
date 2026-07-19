@@ -1,5 +1,6 @@
 import './skills.css'
 import { FiMonitor, FiSmartphone, FiTool } from 'react-icons/fi'
+import SectionHeading from '../section-heading/section-heading'
 
 function Skills() {
   const skillGroups = [
@@ -22,7 +23,11 @@ function Skills() {
 
   return (
     <section className="skills" id="skills">
-      <h2>Skills</h2>
+    <SectionHeading
+    eyebrow="EXPERTISE"
+    title="Technical Skills"
+    subtitle="These are the technologies and tools I use to build modern digital experiences."
+/>
 
       <div className="skills-container">
       {skillGroups.map((group) => (

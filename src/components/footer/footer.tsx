@@ -1,25 +1,36 @@
 import './footer.css'
+import { FiGithub, FiLinkedin, FiMail } from 'react-icons/fi'
 
 function Footer() {
     return (
         <footer className="footer">
+            <div className="footer-content">
+                <h2 className="footer-logo">
+                    Chimdi<span>.</span>
+                </h2>
 
-            <h3>Chimdike</h3>
+                <p>
+                    Building modern web experiences with clean code and thoughtful design.
+                </p>
 
-            <div className="footer-links">
+                <div className="footer-links">
+                    <a href="#" aria-label="GitHub">
+                        <FiGithub />
+                    </a>
 
-                <a href="#">Github</a>
+                    <a href="#" aria-label="LinkedIn">
+                        <FiLinkedin />
+                    </a>
 
-                <a href="#">LinkedIn</a>
+                    <a href="mailto:you@example.com" aria-label="Email">
+                        <FiMail />
+                    </a>
+                </div>
 
-                <a href="#">Twitter</a>
-
+                <span className="copyright">
+                    Designed &amp; Developed by Chimdi
+                </span>
             </div>
-
-            <p>
-                © 2026 All rights reserved
-            </p>
-
         </footer>
     )
 }

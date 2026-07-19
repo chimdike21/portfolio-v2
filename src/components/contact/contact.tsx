@@ -1,5 +1,6 @@
 import './contact.css'
 import { FiMail, FiGithub, FiLinkedin } from 'react-icons/fi'
+import SectionHeading from '../section-heading/section-heading'
 
 function Contact() {
     return (
@@ -7,15 +8,20 @@ function Contact() {
             
             <div className="contact-content">
                 <div className="contact-text">
-                    <span className="section-label">GET IN TOUCH</span>
+                    {/* <span className="section-label">GET IN TOUCH</span> */}
 
-                    <h2>Let's Build Something Great</h2>
+                    <SectionHeading
+    eyebrow="GET IN TOUCH"
+    title="Let's Build Something Great"
+    subtitle="Whether you have a project, an opportunity, or just want to connect, I'd love to hear from you.  Let's create
+                        something meaningful together."
+/>
 
-                    <p>
+                    {/* <p>
                         Whether you have a freelance project, an internship opportunity,
                         or simply want to connect, I'd love to hear from you. Let's create
                         something meaningful together.
-                    </p>
+                    </p> */}
                 </div>
 
                 <div className="contact-cards">

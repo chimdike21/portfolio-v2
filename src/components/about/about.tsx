@@ -1,11 +1,16 @@
 import './about.css'
 import { FiPenTool, FiZap, FiMonitor, FiCode } from 'react-icons/fi'
+import SectionHeading from "../section-heading/section-heading";
 
 
 function About() {
     return (
       <section className="about" id="about">
-        <h2>About Me</h2>
+        <SectionHeading
+    eyebrow="ABOUT"
+    title="Who I Am"
+    subtitle="Frontend developer focused on crafting fast, intuitive, and visually refined digital experiences."
+/>
   
         
         <div className="about-content">
@@ -18,7 +23,7 @@ function About() {
 
             <div className="about-text">
               <p>
-                I'm Chimdi, a frontend developer passionate about building modern,
+                I'm Chimdike, a frontend developer passionate about building modern,
                 responsive web experiences that feel as good to use as they look.
               </p>
 

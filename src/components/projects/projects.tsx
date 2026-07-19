@@ -1,4 +1,5 @@
 import './projects.css'
+import SectionHeading from '../section-heading/section-heading'
 
 function Projects() {
     const projects = [
@@ -34,7 +35,11 @@ function Projects() {
     return (
         <section className="projects" id="projects">
 
-            <h2>Featured Projects</h2>
+<SectionHeading
+    eyebrow="PROJECTS"
+    title="Featured Work"
+    subtitle="A selection of projects that showcase my approach to design, development, and problem solving."
+/>
 
             <div className="projects-container">
 

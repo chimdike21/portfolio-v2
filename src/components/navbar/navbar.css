@@ -35,21 +35,44 @@
     display:flex;
     gap:30px;
     list-style:none;
+    position:relative;
 }
+
+.nav-indicator{
+    position:absolute;
+    bottom:-8px;
+
+    height:2px;
+    border-radius:999px;
+
+    background:#FFD76D;
+
+    transition:
+        left .4s cubic-bezier(0.22,1,0.36,1),
+        width .4s cubic-bezier(0.22,1,0.36,1);
+}
+
 
 .nav-links a{
     text-decoration:none;
     color:white;
+    position:relative;
 
     display:inline-block;
 
     transition:
-    transform 0.45s cubic-bezier(0.22,1,0.36,1);
+    color .3s ease,
+    transform .45s cubic-bezier(0.22,1,0.36,1);
 }
 
 .nav-links a:hover{
     transform:scale(1.12);
 }
+
+.nav-links a.active{
+    color:#FFD76D;
+}
+
 
 
 @media (max-width:768px){
